@@ -1,5 +1,5 @@
 {
-  "name": "28-grupe-social-sql",
+  "name": "51-social-sql",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Atru8729/28-grupe-social-sql.git"
+    "url": "git+https://github.com/Atru8729/51-social-sql.git"
   },
   "keywords": [],
   "author": "Andrius Truskauskas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Atru8729/28-grupe-social-sql/issues"
+    "url": "https://github.com/Atru8729/51-social-sql/issues"
   },
-  "homepage": "https://github.com/Atru8729/28-grupe-social-sql#readme",
+  "homepage": "https://github.com/Atru8729/51-social-sql#readme",
   "description": ""
 }
