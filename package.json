@@ -16,5 +16,8 @@
     "url": "https://github.com/Atru8729/51-social-sql/issues"
   },
   "homepage": "https://github.com/Atru8729/51-social-sql#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "mysql2": "^2.3.0"
+  }
 }
