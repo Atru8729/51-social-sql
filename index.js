@@ -12,11 +12,28 @@ app.init = async () => {
 
     let sql = '';
     let rows = [];
+    let i = 0;
 
-    // // perskaitom ka turim is pradziu
-    sql = 'SELECT * FROM `friends`';
+    const upName = str => {
+        return str[0].toUpperCase() + str.slice(1);
+    }
+
+    // ** 1 ** _Registruotu vartotoju sarasas, isrikiuotas nuo naujausio link seniausio.
+    // Reikia nurodyti varda, post'u kieki, komentaru kieki ir like'u kieki_
+    // pvz.:
+    // ```
+    // Users:
+    // 1. Vardenis: posts (3), comments (2), likes (0);
+    // 2. Vardenis: posts (3), comments (2), likes (0);
+    // 3. Vardenis: posts (3), comments (2), likes (0);
+    // ```
+    sql = 'SELECT * FROM `users` ORDER BY `users`.`register_date` DESC';
     [rows] = await connection.execute(sql);
-    console.log(rows);
+    console.log('Users:');
+    for (const { firstname } of rows) {
+        console.log(`${++i}. ${upName(firstname)}: posts (3), comments (2), likes (0);`);
+    }
+
 
 
 
